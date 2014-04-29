@@ -21,7 +21,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-include_recipe "java"
+#include_recipe "java"
+package 'java7-runtime'
+package 'java7-sdk'
 package 'unzip'
 package 'lsof' # Required to launch the neo4j service
 
