@@ -22,6 +22,7 @@
 # THE SOFTWARE.
 
 #include_recipe "java"
+package 'java7-jdk'
 package 'java7-runtime'
 package 'unzip'
 package 'lsof' # Required to launch the neo4j service
