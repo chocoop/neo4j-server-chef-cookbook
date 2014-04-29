@@ -22,8 +22,7 @@
 # THE SOFTWARE.
 
 #include_recipe "java"
-package 'oracle-java7-jdk'
-package 'oracle-java7-jre'
+package 'oracle-java7-installer'
 package 'oracle-java7-set-default'
 
 package 'unzip'
