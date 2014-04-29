@@ -21,6 +21,18 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+
+
+apt_repository "webupd8team-java" do
+  uri "https://launchpad.net/~webupd8team/+archive/java"
+  distribution node['lsb']['codename']
+  components ["main"]
+  keyserver "keyserver.ubuntu.com"
+  key "EEA14886"
+end
+
+
+
 #include_recipe "java"
 package 'oracle-java7-installer'
 package 'oracle-java7-set-default'
