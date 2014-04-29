@@ -35,8 +35,12 @@ end
 
 # oracle breaks everything with there limitless knowledge.
 bash "set oracles licences to selected and seen" do 
-	echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
-	echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+  user "root"
+  #cwd "/tmp"
+  code <<-EOH
+  echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+  echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
+  EOH
 end
 
 #include_recipe "java"
