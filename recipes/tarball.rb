@@ -24,7 +24,7 @@
 
 
 apt_repository "webupd8team-java" do
-  uri "https://launchpad.net/~webupd8team/+archive/java"
+  uri "http://ppa.launchpad.net/webupd8team/java/ubuntu"
   distribution node['lsb']['codename']
   components ["main"]
   keyserver "keyserver.ubuntu.com"

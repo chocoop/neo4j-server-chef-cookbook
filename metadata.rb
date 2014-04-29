@@ -5,6 +5,7 @@ license           'MIT'
 description       'This cookbook provides Neo4J Server (Community Edition)'
 version           '1.1.0'
 #depends           'java'
+depends           'apt'
 
 recipe 'neo4j-server::tarball', 'Installs a Neo4j server'
 
